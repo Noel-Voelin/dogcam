@@ -11,7 +11,7 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Flatten, Activation, Conv2D, MaxPooling2D
 
 
-class DogTenzer:
+class DogTensor:
 
     def __init__(self):
         self.model = self.open_model("nela_dog.model")
@@ -218,4 +218,4 @@ class DogTenzer:
 
 
 if __name__ == "__main__":
-    print(DogTenzer().predict_if_dog(filepath="nela.jpg"))
+    print(DogTensor().predict_if_dog(filepath="nela.jpg"))

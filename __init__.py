@@ -1,12 +1,12 @@
 from skimage.metrics import structural_similarity as ssim
-import dogTenzer as dt
+import DogTensor as dt
 import cv2
 
 vid = cv2.VideoCapture(0)
 base_frame = None
 gray_base_frame = None
 frame_path = "frames/frame.jpg"
-tenzer = dt.DogTenzer()
+tenzer = dt.DogTensor()
 while (True):
     ret, frame = vid.read()
     if(gray_base_frame is None):
