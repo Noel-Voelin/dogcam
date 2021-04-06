@@ -5,7 +5,7 @@ Dog Cam with Tensorflow
 First attempt of creating a simpel model that detects my dog and does something upon detection
 
 ### Pre Conditions
-Python3 (preferably anaconda) installed and all the required models added. Furtheron, Tensorflow should be installed and configured according to the host machiene (either GPU or CPU optimised) 
+Python3 (preferably anaconda) installed and all the required models added. Further, Tensorflow should be installed and configured according to the host machiene (either GPU or CPU optimised) 
 
 ### Setup
 For creation of the model and the pickle files, create folders that are called according to the catrgories defined in DogTensor.py
