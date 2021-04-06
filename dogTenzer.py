@@ -14,13 +14,14 @@ from tensorflow.keras.layers import Dense, Flatten, Activation, Conv2D, MaxPooli
 class DogTensor:
 
     def __init__(self):
-        self.model = self.open_model("nela_dog.model")
+        self.model = self.open_model("Dog_Human.model")
 
     # This line is needed due to an OSX Quirk
     os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
     # Categories to "learn" from
+    
     # "Nela" does not yet have enough data to be significant.
-    CATEGORIES = ["Dog", "Nela"]
+    CATEGORIES = ["Dog", "Human"]
 
     IMG_SIZE = 50
 
@@ -218,4 +219,4 @@ class DogTensor:
 
 
 if __name__ == "__main__":
-    print(DogTensor().predict_if_dog(filepath="nela.jpg"))
+    print(DogTensor().predict_if_dog(filepath="test.jpg"))
